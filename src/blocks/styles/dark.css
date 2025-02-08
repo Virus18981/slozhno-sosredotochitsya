@@ -4,9 +4,62 @@
   переключая тему
 */
 
+:root {
+  --main-color: #000028;
+  --title-color: #DB00FF;
+}
+
 .page.theme_dark {
+  position: relative;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+/*.decorative-inscription {
+  position: absolute;
+  color: var(--accent-color);
+  font-size: var(--main-font);
+  line-height: 25px;
+  height: 26px;
+  top: 10px;
+  right: 10px;
+
+}*/
+
+.decorated-zone::after {
+  content: "";
+  color: var(--accent-color);
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--accent-color);
+  border-left: none;
+  border-bottom: none;
+  grid-row: 1;
+  grid-column: 2;
+  
+}
+
+.decorated-zone::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--accent-color);
+  border-right: none;
+  border-top: none;
+  margin-block-start: auto;
+  grid-row: -1;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+

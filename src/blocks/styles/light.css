@@ -8,10 +8,16 @@
 .page.theme_light {
   
   --accent-color: #FF8DCB; 
-  --main-color: #FFF1F7;
+  --main-color: #353430;
   --title-color: #FFC2E6; 
-   background-color: var(--main-color);
-  
+  --text-color: #353430;
+  --heading-color: #353430;
+  --cover-image: url(../../images/cover-image-light.png);
+  --accent-link-color: #ff0070;
+  --accent-color-REC: transparent;
+  --button-color: #353430;
+  --decorative-bracket-color: #353430;
+  --button-hover-color: #353430;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -25,7 +31,15 @@
 :root {
       /* Дублируем переменные светлой темы */ 
       --accent-color: #FF8DCB; 
-  --main-color: #FFF1F7;
-  --title-color: #FFC2E6;    
+  --main-color: #353430;
+  --title-color: #FFC2E6; 
+  --text-color: #353430;
+  --heading-color: #353430;
+  --cover-image: url(../../images/cover-image-light.png); 
+  --accent-link-color: #ff0070;
+  --accent-color-REC: transparent; 
+  --button-color: #353430;
+  --decorative-bracket-color: #353430; 
+  --button-hover-color: #353430;
   }
 }

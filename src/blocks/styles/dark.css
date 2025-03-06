@@ -1,0 +1,44 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_dark {
+  --accent-color: #ff0070; 
+  --main-color: #000028;
+  --title-color: #DB00FF;
+  --heading-color: #ff0070;
+  --text-color: #f1b2ce;
+  --accent-link-color: #ff0070;
+  --accent-color-REC: #ff0070;
+  --button-color: #ff0070;
+  --decorative-bracket-color: #ff0070;
+  --main-font: "IBM Plex mono";
+  --bold: 700;
+  --button-hover-color: #ff007066;
+  --cover-image: url(../../images/cover-image-dark.png);
+  
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #ff0070; 
+    --main-color: #000028;
+    --title-color: #DB00FF;
+    --heading-color: #ff0070;
+    --text-color: #f1b2ce;
+    --accent-link-color: #ff0070;
+  --accent-color-REC: #ff0070;
+  --button-color: #ff0070;
+  --decorative-bracket-color: #ff0070;
+    --main-font: "IBM Plex mono";
+    --bold: 700;
+    --button-hover-color: #ff007066;
+    --cover-image: url(../../images/cover-image-dark.png);
+  }
+}

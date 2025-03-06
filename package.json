@@ -1,0 +1,36 @@
+{
+  "name": "slozhno-sosredotochitsya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint './src/**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Virus18981/slozhno-sosredotochitsya.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Virus18981/slozhno-sosredotochitsya/issues"
+  },
+  "homepage": "https://github.com/Virus18981/slozhno-sosredotochitsya#readme",
+  "dependencies": {
+    "stylelint": "^16.14.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "del": "^6.0.0",
+    "gulp": "^5.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "prettier": "^3.4.2"
+  }
+}
